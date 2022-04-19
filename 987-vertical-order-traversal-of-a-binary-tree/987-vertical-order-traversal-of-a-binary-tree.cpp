@@ -39,7 +39,11 @@ public:
                 // for(auto f : sd.second)
                     // res.push_back(sd);
                 
-                res.insert(res.end(),sd.second.begin(),sd.second.end());
+                for(int val : sd.second){
+                    cout<<val<<" ";
+                    res.push_back(val);
+                }
+                // res.insert(res.end(),sd.second.begin(),sd.second.end());
                 
             }
             ans.push_back(res);
