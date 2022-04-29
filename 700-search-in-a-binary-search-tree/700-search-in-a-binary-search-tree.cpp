@@ -11,31 +11,16 @@
  */
 class Solution {
 public:
-    TreeNode* searchBST(TreeNode* root, int val) {
-        // vector<int> vc;
-       
+    TreeNode* searchBST(TreeNode* root, int val) {       
         while(root){
-            if(root->val == val){
+            if(root->val == val)
                return root;
-            }
-            else if(root->val > val){
-                // TreeNode * dum1 = new TreeNode();
-                // dum1 = root;
-                // dum->left = dum1;
-                // vc.push_back(root->val);
+            else if(root->val > val)
                 root = root->left;
-                
-            }
-            else{
-                // TreeNode* dum1 = new TreeNode();
-                // dum1 = root;
-                // dum->right = dum1;
-                // vc.push_back(root->val);
+            else
                 root = root->right;
-            }
         }
-        
-        // if (b) return dum;
+
         return NULL;
         
     }
