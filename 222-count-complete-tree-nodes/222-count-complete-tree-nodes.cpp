@@ -12,26 +12,36 @@
 class Solution {
 public:
     int countNodes(TreeNode* root) {
-        if(root == NULL) return {};
-        queue<TreeNode*> q;
-        // vector<vector<int>> ans;
-        q.push(root);
-        int c=0;
-        while(!q.empty()){
-            vector<int>level;
-            int size = q.size();
-            for(int i = 0; i<size; i++){
-                TreeNode* tmp = q.front();
-                q.pop();
-                if(tmp->left != NULL) q.push(tmp->left);
-                if(tmp->right != NULL) q.push(tmp->right);
-                // level.push_back(tmp->val);
-                c++;
-            
-            }
-            // ans.push_back(level);
-        }
-     return c;
+        if (root == NULL)
+            return 0;
         
+        int lh = solve_left(root);
+        int rh = solve_right(root);
+        
+        
+        if(lh == rh) {
+            return pow(2,rh) -1;}
+        
+        return countNodes(root->left) + countNodes(root->right) +1;
+        
+    }
+    
+    int solve_left(TreeNode* node){
+        int l =0;
+        while(node){
+            l++;
+            node = node->left;
+            
+        }
+        return l;
+    }
+    int solve_right(TreeNode* node){
+        int l =0;
+        while(node){
+            l++;
+            node = node->right;
+           
+        }
+        return l;
     }
 };
