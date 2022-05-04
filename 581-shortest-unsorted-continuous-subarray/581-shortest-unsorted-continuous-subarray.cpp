@@ -10,7 +10,7 @@ public:
         if(nums[i] < c_max) 
             end = i;
         
-        cout<<c_max<<" "<<nums[i]<<" "<<end<<"\n";
+        // cout<<c_max<<" "<<nums[i]<<" "<<end<<"\n";
     }
        int c_min = INT_MAX; 
     for(int i=n-1; i>=0; i--){
