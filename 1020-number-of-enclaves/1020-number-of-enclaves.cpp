@@ -51,11 +51,7 @@ public:
         count =0;
         for(int i=1; i<n-1; i++){
             for(int j=1; j<m-1; j++){
-                if(grid[i][j] == 1){
-                    dfs(grid,i,j,n,m);
-                    c += count;
-                    count = 0;
-                }
+                c += grid[i][j];
             }
         }
      return c;   
