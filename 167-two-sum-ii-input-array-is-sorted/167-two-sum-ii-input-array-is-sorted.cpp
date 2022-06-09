@@ -7,9 +7,8 @@ public:
         while(a<=b){
           if(numbers[a]+numbers[b] == target)
           {
-              vc.push_back(a+1);
-              vc.push_back(b+1);
-            return vc;
+              return {a+1,b+1};
+
           }
         if(numbers[a]+numbers[b] > target)    
             b--; 
