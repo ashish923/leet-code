@@ -9,11 +9,6 @@ public:
         int n = people.size();
         vector<vector<int>> res;
         
-        for(int i=0; i<n; i++){
-            cout<<people[i][0]<<" "<<people[i][1]<<"\n";
-        }
-        
-       
         for(int i = 0; i < n; i++) {
             res.insert(res.begin() + people[i][1], people[i]);
         }
