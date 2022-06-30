@@ -3,10 +3,10 @@ public:
     int longestConsecutive(vector<int>& nums) {
         
         int n = nums.size();
-        unordered_set<int> st;
+      
         unordered_map<int,int> mp;
         for(int i=0; i<n; i++){
-            st.insert(nums[i]);
+            
             mp[nums[i]]++;
         }
         int maxx = 0;
