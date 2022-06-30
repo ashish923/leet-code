@@ -8,8 +8,11 @@ public:
         int sum = 0;
         for(int i = 0; i < n; i++){
             
-            if(nums[i] > mid) sum += nums[i] - mid;
-            else if(nums[i] < mid) sum += mid - nums[i];
+            
+            sum += abs(nums[i] - mid);
+            
+            // if(nums[i] > mid) sum += nums[i] - mid;
+            // else if(nums[i] < mid) sum += mid - nums[i];
             
         }
         
