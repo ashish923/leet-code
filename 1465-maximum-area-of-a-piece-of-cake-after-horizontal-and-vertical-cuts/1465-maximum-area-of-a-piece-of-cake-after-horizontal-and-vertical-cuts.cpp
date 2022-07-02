@@ -21,13 +21,10 @@ public:
         
         long long int a = *max_element(height.begin(), height.end());
         long long int b = *max_element(length.begin(), length.end());
-        cout<<a<<" "<<b<<" ";
         int mod = 1000000007;
-        // return (int)(a%mod*b%mod);
+        return (int)(a%mod*b%mod);
         a = (int)a%mod;
         b = (int)b%mod;
-        cout<<a<<" "<<b<<" ";
-        
         return (a*b)%mod;
         
         
