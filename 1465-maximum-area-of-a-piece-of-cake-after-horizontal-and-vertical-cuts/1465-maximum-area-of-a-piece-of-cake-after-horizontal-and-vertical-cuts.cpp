@@ -23,9 +23,9 @@ public:
         long long int b = *max_element(length.begin(), length.end());
         int mod = 1000000007;
         return (int)(a%mod*b%mod);
-        a = (int)a%mod;
-        b = (int)b%mod;
-        return (a*b)%mod;
+        // a = (int)a%mod;
+        // b = (int)b%mod;
+        // return (a*b)%mod;
         
         
     }
