@@ -21,18 +21,6 @@ public:
         for(int i=0; i<vc.size(); i++){
            sum += vc[i] ;
         }
-        
-        for(int i=0; i<n; i++){
-            cout<<ratings[i]<<" ";
-        }
-        
-        cout<<"\n";
-        for(int i=0; i<n; i++){
-            cout<<vc[i]<<" ";
-        }
-        cout<<"\n";
-        // accumulate(vc.begin(),vc.end(), sum);
-        
         return sum;
     }
 };
