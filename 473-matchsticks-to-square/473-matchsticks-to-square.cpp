@@ -14,7 +14,7 @@ public:
         
         int s = sum/4;
          a = s,b = s , c = s, d = s;
-        sort(sticks.rbegin(),sticks.rend());
+        sort(sticks.begin(),sticks.end(),greater<int>());
         
         return solve(sticks,0);
     }
